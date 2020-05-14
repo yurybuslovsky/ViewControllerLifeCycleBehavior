@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  ViewControllerLifeCycleBehavior
 //
 //  Created by Yury Buslovsky on 14.05.2020.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+final class FirstViewController: UIViewController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        addBehaviors([PrimaryNavBarBehavior()])
     }
-
 
 }
 
