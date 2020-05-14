@@ -8,7 +8,11 @@
 
 import UIKit
 
-struct EdgesForExtendedLayoutBehavior: ViewControllerLifeCycleBehavior {
+// MARK: - Behavior
+
+protocol EdgesForExtendedLayoutBehavior: ViewControllerLifeCycleBehavior {}
+
+extension EdgesForExtendedLayoutBehavior {
 
     func afterLoading(_ viewController: UIViewController) {
         guard #available(iOS 11.0, *) else {
@@ -18,3 +22,7 @@ struct EdgesForExtendedLayoutBehavior: ViewControllerLifeCycleBehavior {
     }
 
 }
+
+// MARK: Implementation
+
+final class EdgesForExtendedLayout: EdgesForExtendedLayoutBehavior {}

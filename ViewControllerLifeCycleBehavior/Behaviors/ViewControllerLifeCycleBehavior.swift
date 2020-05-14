@@ -10,7 +10,8 @@ import UIKit
 
 // MARK: - Declaration
 
-protocol ViewControllerLifeCycleBehavior {
+protocol ViewControllerLifeCycleBehavior: class {
+    init()
     func afterLoading(_ viewController: UIViewController)
     func beforeAppearing(_ viewController: UIViewController)
     func afterAppearing(_ viewController: UIViewController)

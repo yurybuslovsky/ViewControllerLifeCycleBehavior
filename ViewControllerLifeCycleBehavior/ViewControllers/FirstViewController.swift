@@ -8,14 +8,9 @@
 
 import UIKit
 
-final class FirstViewController: UIViewController {
+final class FirstViewController: BehaviorContainingVC<PrimaryNavBar> {
     
     override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        addBehaviors([PrimaryNavBarBehavior()])
-    }
 
 }
 

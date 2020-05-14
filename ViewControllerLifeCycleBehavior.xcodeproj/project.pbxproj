@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E5BC2D6246DB43D007B6A90 /* BehaviorCombinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BC2D5246DB43D007B6A90 /* BehaviorCombinations.swift */; };
+		6E5BC2D8246DB4F5007B6A90 /* BehaviorContainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BC2D7246DB4F5007B6A90 /* BehaviorContainingVC.swift */; };
 		6E8DCEA6246D5FBC0015E7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DCEA5246D5FBC0015E7FB /* AppDelegate.swift */; };
 		6E8DCEAA246D5FBC0015E7FB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DCEA9246D5FBC0015E7FB /* FirstViewController.swift */; };
 		6E8DCEAD246D5FBC0015E7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E8DCEAB246D5FBC0015E7FB /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E5BC2D5246DB43D007B6A90 /* BehaviorCombinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorCombinations.swift; sourceTree = "<group>"; };
+		6E5BC2D7246DB4F5007B6A90 /* BehaviorContainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorContainingVC.swift; sourceTree = "<group>"; };
 		6E8DCEA2246D5FBC0015E7FB /* ViewControllerLifeCycleBehavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerLifeCycleBehavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8DCEA5246D5FBC0015E7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E8DCEA9246D5FBC0015E7FB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 				6E8DCEBA246D61890015E7FB /* ViewControllerLifeCycleBehavior.swift */,
 				6E8DCEC0246D66A20015E7FB /* PrimaryNavBarBehavior.swift */,
 				6E8DCEC4246D686F0015E7FB /* EdgesForExtendedLayoutBehavior.swift */,
+				6E5BC2D5246DB43D007B6A90 /* BehaviorCombinations.swift */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 		6E8DCEC7246D76ED0015E7FB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6E5BC2D7246DB4F5007B6A90 /* BehaviorContainingVC.swift */,
 				6E8DCEA9246D5FBC0015E7FB /* FirstViewController.swift */,
 				6E8DCEC8246D774E0015E7FB /* SecondViewController.swift */,
 			);
@@ -185,11 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5BC2D8246DB4F5007B6A90 /* BehaviorContainingVC.swift in Sources */,
 				6E8DCEC1246D66A20015E7FB /* PrimaryNavBarBehavior.swift in Sources */,
 				6E8DCEC5246D686F0015E7FB /* EdgesForExtendedLayoutBehavior.swift in Sources */,
 				6E8DCEC3246D66E10015E7FB /* UIColor+CustomColors.swift in Sources */,
 				6E8DCEBB246D61890015E7FB /* ViewControllerLifeCycleBehavior.swift in Sources */,
 				6E8DCEC9246D774E0015E7FB /* SecondViewController.swift in Sources */,
+				6E5BC2D6246DB43D007B6A90 /* BehaviorCombinations.swift in Sources */,
 				6E8DCEAA246D5FBC0015E7FB /* FirstViewController.swift in Sources */,
 				6E8DCEA6246D5FBC0015E7FB /* AppDelegate.swift in Sources */,
 				6E8DCECC246D78F70015E7FB /* NavigationController.swift in Sources */,

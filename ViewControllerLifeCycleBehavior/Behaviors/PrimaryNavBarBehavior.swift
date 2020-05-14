@@ -8,15 +8,13 @@
 
 import UIKit
 
-// MARK: - Declaration
-
-final class PrimaryNavBarBehavior {
-    var shouldChangeBarItemsColor: Bool = true
-}
-
 // MARK: - Behavior
 
-extension PrimaryNavBarBehavior: ViewControllerLifeCycleBehavior {
+protocol PrimaryNavBarBehavior: ViewControllerLifeCycleBehavior {
+    var shouldChangeBarItemsColor: Bool { get set }
+}
+
+extension PrimaryNavBarBehavior {
     
     func beforeAppearing(_ viewController: UIViewController) {
         let navigationController = viewController.navigationController
@@ -39,4 +37,10 @@ extension PrimaryNavBarBehavior: ViewControllerLifeCycleBehavior {
         shouldChangeBarItemsColor = false
     }
 
+}
+
+// MARK: - Implementation
+
+final class PrimaryNavBar: PrimaryNavBarBehavior {
+    var shouldChangeBarItemsColor: Bool = true
 }
