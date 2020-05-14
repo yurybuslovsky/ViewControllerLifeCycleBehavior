@@ -14,13 +14,21 @@ protocol EdgesForExtendedLayoutBehavior: ViewControllerLifeCycleBehavior {}
 
 extension EdgesForExtendedLayoutBehavior {
 
-    func afterLoading(_ viewController: UIViewController) {
+    func beforeAppearing(_ viewController: UIViewController) {
+        configureEdges(for: viewController)
+    }
+
+}
+
+extension EdgesForExtendedLayoutBehavior {
+
+    func configureEdges(for viewController: UIViewController) {
         guard #available(iOS 11.0, *) else {
             viewController.edgesForExtendedLayout = []
             return
         }
     }
-
+    
 }
 
 // MARK: Implementation

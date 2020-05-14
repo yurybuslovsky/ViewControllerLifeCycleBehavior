@@ -17,12 +17,7 @@ protocol PrimaryNavBarBehavior: ViewControllerLifeCycleBehavior {
 extension PrimaryNavBarBehavior {
     
     func beforeAppearing(_ viewController: UIViewController) {
-        let navigationController = viewController.navigationController
-        let navigationBar = navigationController?.navigationBar
-        navigationBar?.barTintColor = .primary
-        navigationBar?.backgroundColor = .primary
-        navigationBar?.titleTextAttributes = [.foregroundColor: UIColor.white]
-        shouldChangeBarItemsColor = true
+        configureNavBarBackground(for: viewController)
     }
 
     func beforeLayingOutSubviews(_ viewController: UIViewController) {
@@ -37,6 +32,19 @@ extension PrimaryNavBarBehavior {
         shouldChangeBarItemsColor = false
     }
 
+}
+
+extension PrimaryNavBarBehavior {
+    
+    func configureNavBarBackground(for viewController: UIViewController) {
+        let navigationController = viewController.navigationController
+        let navigationBar = navigationController?.navigationBar
+        navigationBar?.barTintColor = .primary
+        navigationBar?.backgroundColor = .primary
+        navigationBar?.titleTextAttributes = [.foregroundColor: UIColor.white]
+        shouldChangeBarItemsColor = true
+    }
+    
 }
 
 // MARK: - Implementation
