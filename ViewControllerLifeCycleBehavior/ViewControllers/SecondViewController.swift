@@ -12,8 +12,6 @@ import UIKit
 
 final class SecondViewController: BehaviorContainingVC<PrimaryNavBar_EdgesForExtendedLayout> {
 
-    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
-
     @IBAction private func backButtonTapped(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
     }

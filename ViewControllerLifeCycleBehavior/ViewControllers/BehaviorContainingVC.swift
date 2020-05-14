@@ -10,7 +10,9 @@ import UIKit
 
 class BehaviorContainingVC<Behavior: ViewControllerLifeCycleBehavior>: UIViewController {
     
-//    override var preferredStatusBarStyle: UIStatusBarStyle { Behavior() is PrimaryNavBarBehavior ? .lightContent : .default }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        Behavior() is PrimaryNavBarBehavior ? .lightContent : .default
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

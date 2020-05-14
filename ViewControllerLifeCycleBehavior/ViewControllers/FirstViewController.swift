@@ -8,9 +8,5 @@
 
 import UIKit
 
-final class FirstViewController: BehaviorContainingVC<PrimaryNavBar> {
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
-
-}
+final class FirstViewController: BehaviorContainingVC<PrimaryNavBar> {}
 
